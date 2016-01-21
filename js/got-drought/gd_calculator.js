@@ -69,7 +69,7 @@ $('.select-item').on('change', function (e) {
 var food_names = [];
 
 $.each(foods, function (food, food_info) {
-  if (food_info.water_use.water_litres) {
+  if (food_info.water_use.water_gallons) {
     food_names.push({label: food_info.food_name, value: food});
   }
 });
