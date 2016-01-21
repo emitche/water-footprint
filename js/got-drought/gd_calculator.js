@@ -1,14 +1,40 @@
-var UNITS = "gotdrought";
+$(function() {
+  populate_food_list();
+});
 
-function food_water_use(food_unit, water_amount, water_unit) {
-  text = "<div class='bulk-readout'><p class='water-amount'>" + water_amount + " " + water_unit + " " + of_water + "</p><p>is used to produce " + 1 + " " + food_unit + "</p></div>";
-  return text;
+// Populates list of foods inside input
+function populate_food_list() {
+  var food_names = [];
+
+  $.each(foods, function (food, food_info) {
+    if (food_info.water_use.water_gallons) {
+      food_names.push({label: food_info.food_name, value: food});
+    }
+  });
+
+  $(".choose-item").autocomplete({
+    source: food_names,
+    focus: function (event, ui) {
+      $(".choose-item").val(ui.item.label);
+      return false;
+    },
+    select: function (event, ui) {
+      item = foods[ui.item.value];
+      update_displayed_content(item);
+      return false;
+    }
+  });
 }
 
-function serving_water_use(serving, serving_amount, serving_unit, water_amount, water_unit) {
-  text = "<div class='serving-readout'><p>" + serving + " (" + serving_amount + " " + serving_unit + ")</p>" + "<p>" + water_amount + " " + water_unit + " " + of_water + "</p></div>";
-  return text;
-}
+// function food_water_use(food_unit, water_amount, water_unit) {
+//   text = "<div class='bulk-readout'><p class='water-amount'>" + water_amount + " " + water_unit + " " + of_water + "</p><p>is used to produce " + 1 + " " + food_unit + "</p></div>";
+//   return text;
+// }
+
+// function serving_water_use(serving, serving_amount, serving_unit, water_amount, water_unit) {
+//   text = "<div class='serving-readout'><p>" + serving + " (" + serving_amount + " " + serving_unit + ")</p>" + "<p>" + water_amount + " " + water_unit + " " + of_water + "</p></div>";
+//   return text;
+// }
 
 function reset_content() {
   $(".water-footprint .result .heading").html("");
@@ -35,54 +61,9 @@ function update_displayed_content(item) {
       $(".water-footprint .result .bulk-volume").html(bulk_gallons_gallons).addClass("primary");
       $(".water-footprint .result .bulk-weight").removeClass("primary").addClass("secondary");
     }
-
   } else if (gallon_info) {
     $(".water-footprint .result .no-info").html("<p>Gallon info available.</p>");
   } else {
     $(".water-footprint .result .no-info").html("<p>No information available.</p>");
   }
 }
-
-
-// Populates list of foods inside select
-$.each(foods, function(food, food_info) {
-  if (food_info.water_use.water_gallons) {
-    $('.water-footprint .select-item').append(
-      "<option class='food-item " + food + "' value='" + food + "'>"
-      + food_info.food_name +
-      "</option>"
-    );
-  }
-});
-
-
-// Display water use on user selection
-$('.select-item').on('change', function (e) {
-  reset_content();
-  var item_key = $(this).val();
-  var item = foods[item_key];
-
-  update_displayed_content(item);
-});
-
-// Populates list of foods inside input
-var food_names = [];
-
-$.each(foods, function (food, food_info) {
-  if (food_info.water_use.water_gallons) {
-    food_names.push({label: food_info.food_name, value: food});
-  }
-});
-
-$(".choose-item").autocomplete({
-  source: food_names,
-  focus: function (event, ui) {
-    $( ".choose-item" ).val(ui.item.label);
-    return false;
-  },
-  select: function (event, ui) {
-    item = foods[ui.item.value];
-    update_displayed_content(item);
-    return false;
-  }
-});
