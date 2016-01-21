@@ -5,6 +5,7 @@ $(function() {
 // Displays water information for food
 function display_content(item) {
   var gallon_info = item.water_use.water_gallons;
+  reset_content();
   $(".water-footprint .result .heading").html(item.food_name);
 
   var result;
