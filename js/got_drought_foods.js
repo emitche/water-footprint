@@ -3,144 +3,127 @@ var foods = {
     "food_name": "apple",
     "preferred_data": "water_gallons",
     "water_use": {
-      "gallons": {
-        "serving": "1 pound of apples",
-        "water": "84"
-      },
       "water_gallons": {
-        "per_lb": 49
+        "per_lb": 49,
       },
-      "water_litres": {
-        "per_kg": 822,
-        "per_serving": 125,
-        "serving": {
-          "description": "one apple",
-          "weight": {
-            "g": 150,
-          }
-        }
-      }
-    }
+    },
   },
 
-  "apple_juice": {
-    "food_name": "apple juice",
-    "water_use": {
-      "water_litres": {
-        "per_litre": 1140,
-        "per_serving": 230,
-        "serving": {
-          "description": "one glass of apple juice",
-          "volume": {
-            "ml": 230,
-          }
-        }
-      }
-    }
-  },
+  // "apple_juice": {
+  //   "food_name": "apple juice",
+  //   "water_use": {
+  //     "water_litres": {
+  //       "per_litre": 1140,
+  //       "per_serving": 230,
+  //       "serving": {
+  //         "description": "one glass of apple juice",
+  //         "volume": {
+  //           "ml": 230,
+  //         }
+  //       }
+  //     }
+  //   }
+  // },
 
-  "avocado": {
-    "food_name": "Avocado",
-    "water_use": {
-      "gallons": {
-        "serving": "1 pound of avocados",
-        "water": "154"
-      }
-    }
-  },
+  // "avocado": {
+  //   "food_name": "Avocado",
+  //   "water_use": {
+  //     "gallons": {
+  //       "serving": "1 pound of avocados",
+  //       "water": "154"
+  //     }
+  //   }
+  // },
 
-  "banana": {
-    "food_name": "banana",
-    "water_use": {
-      "gallons": {
-        "serving": "1 pound of bananas",
-        "water": "103"
-      },
-      "water_litres": {
-        "per_kg": 790,
-        "per_serving": 160,
-        "serving": {
-          "description": "one banana",
-          "weight": {
-            "g": 200,
-          }
-        }
-      }
-    }
-  },
+  // "banana": {
+  //   "food_name": "banana",
+  //   "water_use": {
+  //     "gallons": {
+  //       "serving": "1 pound of bananas",
+  //       "water": "103"
+  //     },
+  //     "water_litres": {
+  //       "per_kg": 790,
+  //       "per_serving": 160,
+  //       "serving": {
+  //         "description": "one banana",
+  //         "weight": {
+  //           "g": 200,
+  //         }
+  //       }
+  //     }
+  //   }
+  // },
 
   "beef": {
     "food_name": "beef",
     "preferred_data": "water_gallons",
     "water_use": {
       "water_gallons": {
-        "per_lb": 5214
+        "per_lb": 5214,
       },
-      "water_litres": {
-        "per_kg": 15415,
-      }
-    }
+    },
   },
 
-  "beer": {
-    "food_name": "beer",
-    "water_use": {
-      "water_litres": {
-        "per_litre": 298,
-        "per_serving": 74,
-        "serving": {
-          "description": "one glass of beer",
-          "volume": {
-            "ml": 250,
-          }
-        }
-      }
-    }
-  },
+  // "beer": {
+  //   "food_name": "beer",
+  //   "water_use": {
+  //     "water_litres": {
+  //       "per_litre": 298,
+  //       "per_serving": 74,
+  //       "serving": {
+  //         "description": "one glass of beer",
+  //         "volume": {
+  //           "ml": 250,
+  //         }
+  //       }
+  //     }
+  //   }
+  // },
 
-  "black_tea": {
-    "food_name": "black tea",
-    "water_use": {
-      "water_litres": {
-        "per_kg": 8860,
-        "per_litre": 108, // Calculated from serving
-        "per_serving": 27,
-        "serving": {
-          "description": "one cup of black tea (steeped)",
-          "volume": {
-            "ml": 250,
-          }
-        }
-      }
-    }
-  },
+  // "black_tea": {
+  //   "food_name": "black tea",
+  //   "water_use": {
+  //     "water_litres": {
+  //       "per_kg": 8860,
+  //       "per_litre": 108, // Calculated from serving
+  //       "per_serving": 27,
+  //       "serving": {
+  //         "description": "one cup of black tea (steeped)",
+  //         "volume": {
+  //           "ml": 250,
+  //         }
+  //       }
+  //     }
+  //   }
+  // },
 
-  "bread": {
-    "food_name": "bread (from wheat)",
-    "water_use": {
-      "water_litres": {
-        "per_kg": 1608,
-      }
-    }
-  },
+  // "bread": {
+  //   "food_name": "bread (from wheat)",
+  //   "water_use": {
+  //     "water_litres": {
+  //       "per_kg": 1608,
+  //     }
+  //   }
+  // },
 
-  "butter": {
-    "food_name": "butter (from cow's milk)",
-    "water_use": {
-      "water_litres": {
-        "per_kg": 5553
-      }
-    }
-  },
+  // "butter": {
+  //   "food_name": "butter (from cow's milk)",
+  //   "water_use": {
+  //     "water_litres": {
+  //       "per_kg": 5553
+  //     }
+  //   }
+  // },
 
-  "cabbage": {
-    "food_name": "cabbage",
-    "water_use": {
-      "water_litres": {
-        "per_kg": 237
-      }
-    }
-  },
+  // "cabbage": {
+  //   "food_name": "cabbage",
+  //   "water_use": {
+  //     "water_litres": {
+  //       "per_kg": 237
+  //     }
+  //   }
+  // },
 
   "carrot": {
     "food_name": "carrots",
@@ -152,6 +135,7 @@ var foods = {
     }
   },
 
+  // ADD DATA
   "cheese": {
     "food_name": "cheese",
     "water_use": {
@@ -259,7 +243,11 @@ var foods = {
 
   "milk": {
     "food_name": "milk (from cow)",
+    "preferred_data": "water_gallons",
     "water_use": {
+      "water_gallons": {
+        "per_gallon": 1000,
+      },
       "water_litres": {
         "per_kg": 1020,
         "per_litre": 1000, // Calculated from serving
@@ -432,7 +420,7 @@ var foods = {
   },
 
   "wheat": {
-    "food_name": "Wheat",
+    "food_name": "wheat",
     "preferred_data": "water_gallons",
     "water_use": {
       "water_gallons": {

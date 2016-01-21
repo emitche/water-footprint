@@ -1,38 +1,4 @@
-var UNITS;
-// UNITS = "metric";
-// UNITS = "us";
-UNITS = "gotdrought";
-
-var base_unit = "litre";
-var display_unit = "gallon";
-
-var L_TO_GAL = 0.264172052358;
-var KG_TO_LB = 2.205;
-
-function convert_units(n) {
-  if (UNITS == "us") {
-    convert_to_us_units(n);
-  }
-  return n;
-}
-
-function convert_to_us_units(n) {
-  n = n * L_TO_GAL / KG_TO_LB;
-  n = Math.round(n);
-  return n;
-}
-
-function convert_litre_to_gallon(n) {
-  n = n * L_TO_GAL;
-  n = Math.round(n);
-  return n;
-}
-
-function convert_kg_to_lb(n) {
-  n = n / KG_TO_LB;
-  n = Math.round(n);
-  return n;
-}
+var UNITS = "gotdrought";
 
 function food_water_use(food_unit, water_amount, water_unit) {
   text = "<div class='bulk-readout'><p class='water-amount'>" + water_amount + " " + water_unit + " " + of_water + "</p><p>is used to produce " + 1 + " " + food_unit + "</p></div>";
@@ -53,12 +19,12 @@ function reset_content() {
 
 function update_displayed_content(item) {
   var litre_info = item.water_use.water_litres;
+  var gallon_info = item.water_use.water_gallons;
   $(".water-footprint .result .heading").html(item.food_name);
 
   var result;
 
   if (litre_info) {
-
     if (litre_info.per_kg) {
       var bulk_gallons_lbs = food_water_use("lb", convert_to_us_units(litre_info.per_kg), "gallons");
       $(".water-footprint .result .bulk-weight").html(bulk_gallons_lbs).addClass("primary");
@@ -70,6 +36,8 @@ function update_displayed_content(item) {
       $(".water-footprint .result .bulk-weight").removeClass("primary").addClass("secondary");
     }
 
+  } else if (gallon_info) {
+    $(".water-footprint .result .no-info").html("<p>Gallon info available.</p>");
   } else {
     $(".water-footprint .result .no-info").html("<p>No information available.</p>");
   }
@@ -78,7 +46,7 @@ function update_displayed_content(item) {
 
 // Populates list of foods inside select
 $.each(foods, function(food, food_info) {
-  if (food_info.water_use.water_litres) {
+  if (food_info.water_use.water_gallons) {
     $('.water-footprint .select-item').append(
       "<option class='food-item " + food + "' value='" + food + "'>"
       + food_info.food_name +
