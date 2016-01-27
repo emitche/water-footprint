@@ -26,7 +26,7 @@ add_action( 'init', 'water_footprint_register_shortcode' );
 
 function load_water_footprint(){
   ob_start();
-  include('tool.php');
+  include('wordpress/tool.php');
   return ob_get_clean();
 }
 
