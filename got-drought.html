@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Water Footprint</title>
-  <meta charset="UTF-8">
-  <meta name="author" content="Elizabeth Mitchell">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/water-footprint.css" />
+  <head>
+    <title>Water Footprint</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Elizabeth Mitchell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/water-footprint.css" />
+    <link rel="stylesheet" type="text/css" href="css/water-footprint-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/got-drought.css" />
 
-  <!-- jQuery -->
-  <script src="vendor/jquery/jquery-1.11.3.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.min.css" />
-  <link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.structure.min.css" />
-  <link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.theme.min.css" />
-  <script src="vendor/jquery-ui-autocomplete/jquery-ui.min.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.theme.min.css" />
+    <script src="vendor/jquery-ui-autocomplete/jquery-ui.min.js"></script>
 
-  <!-- Original Dataset and Calculations
-    <script src="js/foods.js"></script>
-    <script src="js/calculator.js"></script>
-  -->
+    <!-- Original Dataset and Calculations
+      <script src="js/foods.js"></script>
+      <script src="js/calculator.js"></script>
+    -->
 
-  <!-- Got Drough Data Set and Calculations -->
-  <script src="js/got-drought/gd_foods.js"></script>
-  <script src="js/units.js"></script>
-  <script src="js/got-drought/gd_calculator.js"></script>
-</head>
+    <!-- Got Drough Data Set and Calculations -->
+    <script src="js/got-drought/gd_foods.js"></script>
+    <script src="js/units.js"></script>
+    <script src="js/got-drought/gd_calculator.js"></script>
+  </head>
 
-<body>
-  <h1>Water Footprint Tool</h1>
-  <p>This feature uses a different dataset and simpler way to display the foods. The typeahead feature is also used.</p>
-  <p>Alternatives:
-    <li><a href="index.html">default functionality and default dataset</a></li>
-    <li><a href="autocomplete.html">type-ahead functionality and default dataset</a></li>
-    </p>
+  <body>
+    <h1>Water Footprint Tool</h1>
 
-  <section class="water-footprint">
-    <header>
-      <h1>How thirsty is your food?</h1>
-      <p class="instructions">Select an item below to display the amount of water used to produce the food.</p>
-    </header>
+    <section class="water-footprint">
+      <header>
+        <h1>How thirsty is your food?</h1>
+        <p class="instructions">Select an item below to display the amount of water used to produce the food.</p>
+      </header>
 
-    <input class="choose-item" value="" />
+      <input class="choose-item" value="" />
 
-    <section class="result">
-      <h1 class="heading"></h1>
-      <div class="bulk-volume">
-      </div>
-      <div class="bulk-weight">
-      </div>
-      <div class="one-serving">
-      </div>
-      <div class="no-info">
-      </div>
+      <section class="result">
+        <h1 class="heading"></h1>
+        <div class="bulk-volume">
+        </div>
+        <div class="bulk-weight">
+        </div>
+        <div class="one-serving">
+        </div>
+        <div class="no-info">
+        </div>
+      </section>
     </section>
+
+    <section class="about-tool">
+      <h1>About the tool</h1>
+      <h2>Feature: Got Drought Dataset with Autocomplete</h2>
+      <p>This feature uses a different dataset and simpler way to display the foods. The typeahead feature is also used.
+
+      <p>The dataset is from <a href="http://gotdrought.com">Got Drought</a>. This tool and the dataset are currently under development.</p>
+
+      <nav>
+        <h3>Alternatives:</h3>
+        <ul>
+          <li>
+            <a href="index.html">default selection with default dataset</a>
+          </li>
+          <li>
+            <a href="autocomplete.html">autocomplete with default dataset</a>
+          </li>
+        </ul>
+      </nav>
     </section>
-  </section>
-</body>
+
+  </body>
 </html>

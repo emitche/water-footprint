@@ -1,0 +1,15 @@
+.water-footprint, .about-tool {
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.about-tool {
+  font-size: .9em;
+  background: rgb(220,220,220)
+}
+
+.water-footprint {
+  background: rgb(120,180,190);
+  background: rgb(160,185,190);
+}

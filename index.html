@@ -6,6 +6,7 @@
   <meta name="author" content="Elizabeth Mitchell">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/water-footprint.css" />
+  <link rel="stylesheet" type="text/css" href="css/water-footprint-theme.css" />
   <script src="vendor/jquery/jquery-1.11.3.min.js"></script>
   <script src="js/foods.js"></script>
   <script src="js/units.js"></script>
@@ -13,14 +14,11 @@
 
 <body>
   <h1>Water Footprint Tool</h1>
-  <p>Alternative Feature: <a href="autocomplete.html">text prediction</a></p>
 
   <section class="water-footprint">
     <header>
       <h1>How thirsty is your food?</h1>
       <p class="instructions">Select an item below to display the amount of water used to produce the food.</p>
-
-      <p class="credits">All water footprint statistics are from The Water Footprint Network's <a href="http://waterfootprint.org/en/resources/interactive-tools/product-gallery/" target="_blank">interactive tool</a>.</p>
     </header>
 
     <select class="select-item">
@@ -36,6 +34,25 @@
       <div class="no-info">
       </div>
     </section>
+  </section>
+
+  <section class="about-tool">
+    <h1>About the tool</h1>
+    <h2>Feature: Default selection with default Dataset</h2>
+
+    <p class="credits">All water footprint statistics are from The Water Footprint Network's <a href="http://waterfootprint.org/en/resources/interactive-tools/product-gallery/" target="_blank">interactive tool</a>.</p>
+
+    <nav>
+      <h3>Alternatives:</h3>
+      <ul>
+        <li>
+          <a href="autocomplete.html">autocomplete with default dataset</a>
+        </li>
+        <li>
+          <a href="got-drought.html">autocomplete with Got Drought dataset</a>
+        </li>
+      </ul>
+    </nav>
   </section>
 
   <script src="js/calculator.js"></script>
