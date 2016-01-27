@@ -26,10 +26,12 @@ var foods = {
     },
   },
 
-  // ADD DATA
   "cheese": {
     "food_name": "cheese",
     "water_use": {
+      "water_gallons": {
+        "per_gallon": 896
+      }
     }
   },
 
