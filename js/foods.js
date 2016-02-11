@@ -368,7 +368,7 @@ var foods = {
     }
   },
 
-  "sugar_beet": {
+  "sugar_cane": {
     "food_name": "sugar (from sugar cane)",
     "water_use": {
       "water_litres": {

@@ -12,7 +12,7 @@ var foods = {
     "food_name": "avocado",
     "water_use": {
       "water_gallons": {
-        "per_lb": "154"
+        "per_lb": 154
       }
     }
   },
@@ -145,7 +145,7 @@ var foods = {
   },
 
   "goat": {
-    "food_name": "goat (meat)",
+    "food_name": "goat meat",
     "water_use": {
       "water_gallons": {
         "per_lb": 661
@@ -180,6 +180,42 @@ var foods = {
     },
   },
 
+  "orange": {
+    "food_name": "orange",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 67
+      }
+    }
+  },
+
+  "orange_juice": {
+    "food_name": "orange juice",
+    "water_use": {
+      "water_gallons": {
+        "per_gallon": 269,
+      }
+    }
+  },
+
+  "pasta": {
+    "food_name": "pasta (dry, from wheat)",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 222
+      }
+    }
+  },
+
+  "peach": {
+    "food_name": "peach or nectarine",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 109,
+      }
+    }
+  },
+
   "pork": {
     "food_name": "pork",
     "water_use": {
@@ -196,6 +232,51 @@ var foods = {
         "per_lb": 24,
       },
     },
+  },
+
+  "potato_chips": {
+    "food_name": "potato chips",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 125,
+      }
+    }
+  },
+
+  "rice": {
+    "food_name": "rice (dry)",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 299,
+      }
+    }
+  },
+
+  "sheep": {
+    "food_name": "sheep (meat)",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 1247,
+      }
+    }
+  },
+
+  "sugar_beet": {
+    "food_name": "sugar (from sugar beet)",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 110,
+      }
+    }
+  },
+
+  "sugar_cane": {
+    "food_name": "sugar (from sugar cane)",
+    "water_use": {
+      "water_gallons": {
+        "per_lb": 213,
+      }
+    }
   },
 
   "tomato": {
