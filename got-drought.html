@@ -33,10 +33,32 @@
     <section class="water-footprint">
       <header>
         <h1>How thirsty is your food?</h1>
-        <p class="instructions">Select an item below to display the amount of water used to produce the food.</p>
+        <p class="instructions">Type the name of a food to display the amount of water used to produce the food.</p>
       </header>
 
-      <input class="choose-item" value="" />
+      <input name="choose-food" class="choose-item" value="" aria-label="Type Name of Food" />
+
+      <div class="additonal-instructions">
+        <h3>Instructions</h2>
+        <ol>
+          <li>
+            Begin by typing the name of a food. As you type, a list of foods matching will appear.
+          </li>
+          <li>Select the food.
+            <ul>
+              <li>
+                Click or touch the food for which you would like water data displayed.
+              </li>
+              <li>
+                On a keyboard, use the up and down arrows to access the matching foods. Hit "Enter" when are ready to select an item.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Once you have clicked or touched the food or hit "Enter", the food you selected will be displayed below.
+          </li>
+        </ol>
+      </div>
 
       <section class="result">
         <h1 class="heading"></h1>
