@@ -12,14 +12,15 @@ Version: 1.0
 Author URI: http://github.com/emitche
 */
 
-# defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 function water_footprint_tool_shortcode() {
     return load_water_footprint_tool();
 }
 
 function water_footprint_tool_register_shortcode() {
-    add_shortcode( 'water-footprint-tool', 'water_footprint_tool_shortcode' );
+    add_shortcode( 'water-footprint-tool',
+      'water_footprint_tool_shortcode' );
 }
 
 add_action( 'init', 'water_footprint_tool_register_shortcode' );

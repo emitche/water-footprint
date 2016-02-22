@@ -24,8 +24,6 @@
     <p class="instructions">Type the name of a food to display the amount of water used to produce the food.</p>
   </header>
 
-  <input name="choose-food" class="choose-item" value="" aria-label="Type Name of Food" />
-
   <div class="additonal-instructions">
     <h3>Instructions</h2>
     <ol>
@@ -47,6 +45,8 @@
       </li>
     </ol>
   </div>
+
+  <input name="choose-food" class="choose-item" value="" aria-label="Type Name of Food" />
 
   <section class="result">
     <h1 class="heading"></h1>

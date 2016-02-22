@@ -87,3 +87,15 @@ h6 {
 a {
   color: rgb(16,88,104);
 }
+
+input.choose-item {
+  height: 2em;
+  padding: .5em;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background: white;
+}
+
+input.choose-item:focus {
+  border: 2px solid yellow;
+}
