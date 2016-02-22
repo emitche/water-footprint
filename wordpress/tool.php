@@ -24,7 +24,7 @@
     <p class="instructions">Type the name of a food to display the amount of water used to produce the food.</p>
   </header>
 
-  <div class="additonal-instructions">
+  <div class="additional-instructions">
     <h3>Instructions</h2>
     <ol>
       <li>
