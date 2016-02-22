@@ -21,6 +21,9 @@ function water_footprint_tool_shortcode() {
 function water_footprint_tool_register_shortcode() {
     add_shortcode( 'water-footprint-tool',
       'water_footprint_tool_shortcode' );
+
+    add_shortcode( 'water-footprint',
+      'water_footprint_tool_shortcode' );
 }
 
 add_action( 'init', 'water_footprint_tool_register_shortcode' );
