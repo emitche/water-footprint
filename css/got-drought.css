@@ -47,3 +47,7 @@
 .water-footprint .secondary .water-amount {
   font-size: 1.6em;
 }
+
+.water-footprint .additional-instructions {
+  text-align: left;
+}
