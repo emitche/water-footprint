@@ -53,37 +53,36 @@
   font-size: 1.2em;
 }
 
-
 /* Basic Styling */
 
-html {
+#water-footprint-tool {
   font-size: 16px;
 }
 
-h1 {
+#water-footprint-tool h1 {
   font-size: 175%;
 }
 
-h2 {
+#water-footprint-tool h2 {
   font-size: 150%;
 }
 
-h3 {
+#water-footprint-tool h3 {
   font-size: 125%;
 }
 
-h4 {
+#water-footprint-tool h4 {
   font-size: 115%;
 }
 
-h5 {
+#water-footprint-tool h5 {
   font-size: 110%;
 }
 
-h6 {
+#water-footprint-tool h6 {
   font-size: 105%;
 }
 
-a {
+#water-footprint-tool a {
   color: rgb(16,88,104);
 }
