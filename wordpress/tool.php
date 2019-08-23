@@ -14,7 +14,7 @@
 <script src="<?php echo $url ?>/water-footprint-wp/js/got-drought/foods.js"></script>
 <script src="<?php echo $url ?>/water-footprint-wp/js/units.js"></script>
 
-<section class="water-footprint">
+<section class="water-footprint" id="water-footprint-tool">
   <header>
     <h1>How thirsty is your food?</h1>
     <p class="instructions">Select an item below to display the amount of water used to produce the food.</p>

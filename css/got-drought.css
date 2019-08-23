@@ -1,45 +1,45 @@
 /* Custom Styles for Got Drought */
 
-.water-footprint {
+#water-footprint-tool {
   margin: 1em 0;
   color: white;
   background: #09c;
 }
 
-.water-footprint .heading {
+#water-footprint-tool .heading {
   /* font-size: 3em;
   line-height: 100%; */
 }
 
-.water-footprint select {
+#water-footprint-tool select {
   border-radius: 5px;
   border: none;
   color: #666;
 }
 
-.water-footprint .result {
+#water-footprint-tool .result {
   margin: 3em 0;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.water-footprint .result p {
+#water-footprint-tool .result p {
   margin: .5em 0;
 }
 
-.water-footprint .water-amount {
+#water-footprint-tool .water-amount {
   /* font-size: 2em;
   line-height: 100%; */
 }
 
-.water-footprint .secondary {
+#water-footprint-tool .secondary {
   margin-top: 4em;
 }
 
-.water-footprint .secondary p {
+#water-footprint-tool .secondary p {
   font-size: 80%;
 }
 
-.water-footprint .secondary .water-amount {
+#water-footprint-tool .secondary .water-amount {
   font-size: 1.6em;
 }
