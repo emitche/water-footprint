@@ -3,12 +3,6 @@
 #water-footprint-tool {
   margin: 1em 0;
   color: white;
-  background: #09c;
-}
-
-#water-footprint-tool .heading {
-  /* font-size: 3em;
-  line-height: 100%; */
 }
 
 #water-footprint-tool select {
@@ -25,11 +19,6 @@
 
 #water-footprint-tool .result p {
   margin: .5em 0;
-}
-
-#water-footprint-tool .water-amount {
-  /* font-size: 2em;
-  line-height: 100%; */
 }
 
 #water-footprint-tool .secondary {

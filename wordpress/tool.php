@@ -3,8 +3,6 @@
 <link rel="stylesheet" type="text/css"
   href="<?php echo $url ?>/water-footprint-wp/css/water-footprint.css" />
 <link rel="stylesheet" type="text/css"
-  href="<?php echo $url ?>/water-footprint-wp/css/water-footprint-theme.css" />
-<link rel="stylesheet" type="text/css"
   href="<?php echo $url ?>/water-footprint-wp/css/got-drought.css" />
 <script src="<?php echo $url ?>/water-footprint-wp/vendor/jquery/jquery-1.11.3.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo $url ?>/water-footprint-wp/vendor/jquery-ui/jquery-ui.min.css" />
